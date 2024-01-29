@@ -1,17 +1,17 @@
 # frontend-project-44
-## Brain-games is a simple set of terminal mini-games.
+## Brain-games - это простой набор терминальных мини-игр.
 
-### Requirements:
+### Требования:
 
   Node-JS 13.2.0 or higher
 
-### How to install games: 
-#### Open console and execute:
-  To clone repository:
+### Как установить игру: 
+#### Откройте консоль и выполните команды:
+  Для клонирования репозитория:
   ```sh
 git clone https://github.com/RomanSovaOne/frontend-project-44
 ```
-  To install project:
+  Для установки проекта:
   ```
 make install
 ```
@@ -22,33 +22,33 @@ make publish
 npm link
 ```
 
-### Now you can play
+### Теперь можно играть
 
-Type the name of the game and press Enter!
+Введите название игры и нажмите Enter!
 
 #### Rules:
 
-> **brain-even** - user is shown a random number. And he needs to answer **yes** if the number is even, or **no** if it is odd;
+> **brain-even** - пользователю показывается случайное число. И ему нужно ответить **да**, если число четное, или **нет**, если оно нечетное;
 
-> **brain-calс** - user is shown a random mathematical expression, for example 35 + 16, which needs to be calculated and written down the correct answer;
+> **brain-calс** - пользователю показывается случайное математическое выражение, например 35 + 16, которое необходимо вычислить и записать правильный ответ;
 
-> **brain-gcd** - two random numbers are shown to the user, for example, 25 50. The user must calculate and enter the largest common divisor of these numbers;
+> **brain-gcd** - пользователю показываются два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел;
 
-> **brain-progression** - the player is shown a series of numbers forming an arithmetic progression in which one of the numbers is replaced by two points. The player must determine this number;
+> **brain-progression** - пользователю показывают ряд чисел, образующих арифметическую прогрессию, в которой одно из чисел заменяется двумя точками. Игрок должен определить это число;
 
-> **brain-prime** - user is shown a random number. And he needs to answer **yes** if the number is prime, or **no** if not.
+> **brain-prime** - пользователю показывается случайное число. И ему нужно ответить **да**, если число простое, или **нет**, если нет.
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/RomanSovaOne/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/RomanSovaOne/frontend-project-44/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d6612525da164fc6495d/maintainability)](https://codeclimate.com/github/RomanSovaOne/frontend-project-44/maintainability)
 
-https://asciinema.org/a/mEfvBhhAiNM48PNotP9qCw1mM
+Аскинема для игры brain-even: https://asciinema.org/a/mEfvBhhAiNM48PNotP9qCw1mM
 
-https://asciinema.org/a/bQEGce71C5mDEaueN6XeFWo2A
+Аскинема для игры brain-calc: https://asciinema.org/a/bQEGce71C5mDEaueN6XeFWo2A
 
-https://asciinema.org/a/3pVruspKCGm0OLXayBVKLpwiz
+Аскинема для игры brain-gcd: https://asciinema.org/a/3pVruspKCGm0OLXayBVKLpwiz
 
-https://asciinema.org/a/ov5dUHuZzyY8lNVqnShtDQtFQ
+Аскинема для игры brain-progression: https://asciinema.org/a/ov5dUHuZzyY8lNVqnShtDQtFQ
 
-https://asciinema.org/a/pmF5gJnOJE51qpM59L7upfZNd
+Аскинема для игры brain-prime: https://asciinema.org/a/pmF5gJnOJE51qpM59L7upfZNd
