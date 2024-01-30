@@ -45,10 +45,10 @@ npm link
 
 Аскинема для игры brain-even: [![asciicast](https://asciinema.org/a/mEfvBhhAiNM48PNotP9qCw1mM.svg)](https://asciinema.org/a/mEfvBhhAiNM48PNotP9qCw1mM)
 
-Аскинема для игры brain-calc: [![asciicast](https://asciinema.org/a/bQEGce71C5mDEaueN6XeFWo2A.svg)] (https://asciinema.org/a/bQEGce71C5mDEaueN6XeFWo2A)
+Аскинема для игры brain-calc: [![asciicast](https://asciinema.org/a/bQEGce71C5mDEaueN6XeFWo2A.svg)](https://asciinema.org/a/bQEGce71C5mDEaueN6XeFWo2A)
 
-Аскинема для игры brain-gcd: [![asciicast](https://asciinema.org/a/3pVruspKCGm0OLXayBVKLpwiz.svg)] (https://asciinema.org/a/3pVruspKCGm0OLXayBVKLpwiz)
+Аскинема для игры brain-gcd: [![asciicast](https://asciinema.org/a/3pVruspKCGm0OLXayBVKLpwiz.svg)](https://asciinema.org/a/3pVruspKCGm0OLXayBVKLpwiz)
 
-Аскинема для игры brain-progression: [![asciicast](https://asciinema.org/a/ov5dUHuZzyY8lNVqnShtDQtFQ.svg)] (https://asciinema.org/a/ov5dUHuZzyY8lNVqnShtDQtFQ)
+Аскинема для игры brain-progression: [![asciicast](https://asciinema.org/a/ov5dUHuZzyY8lNVqnShtDQtFQ.svg)](https://asciinema.org/a/ov5dUHuZzyY8lNVqnShtDQtFQ)
 
-Аскинема для игры brain-prime: [![asciicast](https://asciinema.org/a/pmF5gJnOJE51qpM59L7upfZNd.svg)] (https://asciinema.org/a/pmF5gJnOJE51qpM59L7upfZNd)
+Аскинема для игры brain-prime: [![asciicast](https://asciinema.org/a/pmF5gJnOJE51qpM59L7upfZNd.svg)](https://asciinema.org/a/pmF5gJnOJE51qpM59L7upfZNd)
