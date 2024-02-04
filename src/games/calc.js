@@ -1,13 +1,30 @@
-import gameEngine from '../gameEngine.js';
-import { getRandomNumber, randomEquasion } from '../utils.js';
+import { randomizer } from '../utils.js';
+import playGame from '../index.js';
 
-const rule = 'What is the result of the expression?';
+const gameRules = 'What is the result of the expression?';
+
+const operators = ['+', '-', '*'];
 
 const getQuestionAndAnswer = () => {
-  const equasion = randomEquasion(getRandomNumber(0, 100), getRandomNumber(0, 100));
-  return [equasion.equasion, equasion.result];
+  const leftOperand = randomizer();
+  const rightOperand = randomizer();
+  const operator = operators[randomizer(3)];
+  // const question = `${leftOperand} ${operator} ${rightOperand}`;
+  if (operator === '+') {
+    const question = `${leftOperand} + ${rightOperand}`;
+    const correctAnswer = leftOperand + rightOperand;
+    return [question, String(correctAnswer)];
+  }
+  if (operator === '-') {
+    const question = `${leftOperand} - ${rightOperand}`;
+    const correctAnswer = leftOperand - rightOperand;
+    return [question, String(correctAnswer)];
+  }
+  const question = `${leftOperand} * ${rightOperand}`;
+  const correctAnswer = leftOperand * rightOperand;
+  return [question, String(correctAnswer)];
 };
 
 export default () => {
-  gameEngine(rule, getQuestionAndAnswer);
+  playGame(gameRules, getQuestionAndAnswer);
 };

@@ -1,32 +1,36 @@
-import gameEngine from '../gameEngine.js';
-import { getRandomNumber } from '../utils.js';
+import { randomizer } from '../utils.js';
+import playGame from '../index.js';
 
-const rule = 'What number is missing in the progression?';
+const gameRules = 'What number is missing in the progression?';
 
-const progressionLength = 10;
-
-const getProgression = (startProgression, stepProgression) => {
-  const progressions = [];
-  for (let i = 0; i < progressionLength; i += 1) {
-    const value = startProgression + stepProgression * i;
-    progressions.push(value);
+const getProgression = () => {
+  const progression = [];
+  const startPoint = randomizer(100);
+  progression.push(startPoint);
+  const step = randomizer(15);
+  for (let i = 1; i < 10; i += 1) {
+    progression.push(progression[i - 1] + step);
   }
-  return progressions;
+  return progression;
 };
 
 const getQuestionAndAnswer = () => {
-  const minStep = 2;
-  const maxStep = 10;
-  const start = getRandomNumber(1, 100);
-  const step = getRandomNumber(minStep, maxStep);
-  const progression = getProgression(start, step);
-  const minIndexOfHiddenNumber = 0;
-  const maxIndexOfHiddenNumber = progressionLength - 1;
-  const indexOfHiddenNumber = getRandomNumber(minIndexOfHiddenNumber, maxIndexOfHiddenNumber);
-  const answer = String(progression[indexOfHiddenNumber]);
-  progression[indexOfHiddenNumber] = '..';
-  const question = progression.join(' ');
-  return [question, answer];
+  const progression = getProgression();
+  const step = progression[1] - progression[0];
+  const indexOfHiddenElement = randomizer(10);
+  progression[indexOfHiddenElement] = '..';
+  let question = '';
+  for (let i = 0; i < progression.length; i += 1) {
+    question += `${progression[i]} `;
+  }
+  if (indexOfHiddenElement !== 0) {
+    const correctAnswer = String(progression[indexOfHiddenElement - 1] + step);
+    return [question, correctAnswer];
+  }
+  const correctAnswer = String(progression[1] - step);
+  return [question, correctAnswer];
 };
 
-export default () => gameEngine(rule, getQuestionAndAnswer);
+export default () => {
+  playGame(gameRules, getQuestionAndAnswer);
+};

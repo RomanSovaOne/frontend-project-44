@@ -1,15 +1,15 @@
-import gameEngine from '../gameEngine.js';
-import { getRandomNumber } from '../utils.js';
+import { randomizer, getCorrectAnswer } from '../utils.js';
+import playGame from '../index.js';
 
-const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEven = (num) => num % 2 === 0;
 const getQuestionAndAnswer = () => {
-  const question = getRandomNumber(0, 100);
-  const answer = isEven(question) ? 'yes' : 'no';
-  return [question, answer];
+  const resultOfRandomizer = randomizer();
+  const question = `${resultOfRandomizer}`;
+  const correctAnswer = getCorrectAnswer(resultOfRandomizer);
+  return [question, correctAnswer];
 };
 
 export default () => {
-  gameEngine(rule, getQuestionAndAnswer);
+  playGame(gameRules, getQuestionAndAnswer);
 };
